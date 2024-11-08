@@ -143,7 +143,7 @@ const ArtistPage = () => {
   return (
     <div
       className={`page-artists h-full overflow-y-auto ${
-        isDarkMode ? "bg-neutral-900 text-white" : "bg-white text-black"
+        isDarkMode ? "bg-[#101010] text-white" : "bg-white text-black"
       }`}
     >
       <div className="artist-container flex flex-wrap max-w-[1280px] mx-auto w-[95%] pt-5">

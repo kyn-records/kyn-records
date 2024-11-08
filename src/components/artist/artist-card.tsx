@@ -44,8 +44,8 @@ const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
           backgroundPosition: "center",
         }}
       />
-      <div className="w-full bottom-0 text-white mt-4 md:opacity-55 md:group-hover:opacity-85 transition-all">
-        <CardTitle className="text-xl font-bold">{artist.name}</CardTitle>
+      <div className="w-full bottom-0 text-white mt-4 md:opacity-35 md:group-hover:opacity-85 transition-all">
+        <CardTitle className="text-2xl font-bold">{artist.name}</CardTitle>
         <div className="md:opacity-0 md:group-hover:opacity-100 transition-all">
           <a
             href={artist.website}
