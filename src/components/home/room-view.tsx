@@ -48,9 +48,9 @@ function Room() {
           luminanceThreshold={0}
           mipmapBlur
           luminanceSmoothing={0.9}
-          intensity={0.13}
+          intensity={0.06}
         />
-        <Noise opacity={0.02} />
+        <Noise opacity={0.01} />
         <Vignette eskil={false} offset={0.05} darkness={1} />
       </EffectComposer>
       <OrbitControls ref={cameraRef} target={[0, 1, 0]} />
