@@ -37,7 +37,7 @@ const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
   return (
     <div className="group transition-transform transform lg:hover:scale-105 border-none overflow-hidden saturate-[85%] rounded-none shadow-none">
       <div
-        className="artist-image h-0 pt-[75%] shadow-lg rounded-xl"
+        className="artist-image h-0 pt-[75%] shadow-xl rounded-[10px]"
         style={{
           backgroundImage: `url(${artist.image})`,
           backgroundSize: "cover",
