@@ -4,7 +4,7 @@ import { Link } from "wouter";
 
 export const Header = () => {
   return (
-    <div className="bg-neutral-900 p-4 text-white flex justify-between items-center sticky top-0 left-0">
+    <div className="bg-neutral-900 p-4 text-white flex justify-between items-center sticky top-0 left-0 z-[99999] shadow-lg">
       <Link href="/">
         <div className="flex gap-2 items-between opacity-75 items-center">
           <FaRecordVinyl size={38} />

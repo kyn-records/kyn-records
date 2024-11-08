@@ -26,7 +26,7 @@ function Room() {
 
   return (
     <Canvas
-      style={{ height: "100%", width: "100%", background: "#0d0d0d" }}
+      style={{ height: "100%", width: "100%", background: "#101010" }}
       camera={{ fov: getFov(), position: [10, 10, 17] }}
       shadows
       dpr={[1, 1.5]}
