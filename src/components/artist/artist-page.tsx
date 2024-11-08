@@ -148,7 +148,7 @@ const ArtistPage = () => {
     >
       <div className="artist-container flex flex-wrap max-w-[1280px] mx-auto w-[95%] pt-5">
         <div className="flex justify-between items-center w-full mb-6">
-          <h1 className="text-3xl font-bold">Artists</h1>
+          <h1 className="text-3xl font-light">Artists</h1>
           {/* <DarkModeToggle /> */}
         </div>
 
