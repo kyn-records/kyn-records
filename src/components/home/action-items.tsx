@@ -6,6 +6,7 @@ import { Vector3 } from "@react-three/fiber";
 import { ReactNode } from "react";
 import { FaRegNewspaper } from "react-icons/fa6";
 import { Link } from "wouter";
+import { IoMdMicrophone } from "react-icons/io";
 
 const HTML = ({
   position,
@@ -53,7 +54,7 @@ export const ActionItems = () => {
       <HTML position={[-0.25, 0.5, 0.8]}>
         <Link href="/artist">
           <Button>
-            <BsMusicPlayerFill size={11} />
+          <IoMdMicrophone size={13} />
           </Button>
         </Link>
       </HTML>
