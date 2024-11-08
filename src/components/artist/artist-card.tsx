@@ -35,7 +35,7 @@ const iconMap: Record<string, React.ElementType> = {
 const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
 
   return (
-    <Card className="rounded-xl shadow-lg transition-transform transform lg:hover:scale-105 border-none overflow-hidden">
+    <Card className="rounded-xl shadow-lg transition-transform transform lg:hover:scale-105 border-none overflow-hidden saturate-[85%]">
       <div
         className="artist-image h-0 pt-[75%]"
         style={{
