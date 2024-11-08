@@ -142,7 +142,7 @@ const ArtistPage = () => {
 
   return (
     <div
-      className={`page-artists h-screen overflow-y-auto ${
+      className={`page-artists h-full overflow-y-auto ${
         isDarkMode ? "bg-neutral-900 text-white" : "bg-white text-black"
       }`}
     >
@@ -152,12 +152,13 @@ const ArtistPage = () => {
           {/* <DarkModeToggle /> */}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
           {artists.map((artist, index) => (
             <ArtistCard key={index} artist={artist} />
           ))}
         </div>
       </div>
+      <div className='bg-[url("/noise-light.png")] absolute top-0 left-0 h-full w-full pointer-events-none opacity-10'></div>
     </div>
   );
 };

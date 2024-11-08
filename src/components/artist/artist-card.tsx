@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Card, CardTitle } from "@/components/ui/card";
 
 import {
@@ -33,38 +33,18 @@ const iconMap: Record<string, React.ElementType> = {
   TikTok: FaTiktok,
 };
 const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
-  const [imageHeight, setImageHeight] = useState("calc(25.93vw - 32.96px)");
-
-  useEffect(() => {
-    const updateHeight = () => {
-      if (window.innerWidth < 786) {
-        setImageHeight("calc(100vw)");
-      } else {
-        setImageHeight("calc(16.93vw - 45.96px)"); // Original calculation for larger screens
-      }
-    };
-
-    updateHeight();
-
-    window.addEventListener("resize", updateHeight);
-
-    return () => {
-      window.removeEventListener("resize", updateHeight);
-    };
-  }, []);
 
   return (
     <Card className="rounded-xl shadow-lg transition-transform transform lg:hover:scale-105 border-none overflow-hidden">
       <div
-        className="artist-image"
+        className="artist-image h-0 pt-[75%]"
         style={{
-          height: imageHeight,
           backgroundImage: `url(${artist.image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
-      <div className="absolute w-full p-[15px] bottom-0 bg-gradient-to-b from-transparent to-black/80">
+      <div className="absolute w-full p-[15px] bottom-0 bg-gradient-to-b from-transparent to-black/85 text-white">
         <CardTitle className="text-xl font-bold">{artist.name}</CardTitle>
         <a
           href={artist.website}
