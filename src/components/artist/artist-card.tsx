@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardTitle } from "@/components/ui/card";
 
 import {
+  FaArrowRight,
   FaFacebook,
   FaInstagram,
   FaTiktok,
@@ -33,7 +34,6 @@ const iconMap: Record<string, React.ElementType> = {
   TikTok: FaTiktok,
 };
 const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
-
   return (
     <Card className="rounded-xl shadow-lg transition-transform transform lg:hover:scale-105 border-none overflow-hidden saturate-[85%]">
       <div
@@ -50,9 +50,12 @@ const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
           href={artist.website}
           target="_blank"
           rel="noopener noreferrer"
-          className="artist-site mb-2 block underline-animation"
+          className="artist-site mb-2 underline-animation"
         >
-          Official Site
+          <span className="flex flex-row gap-1 whitespace-nowrap items-center">
+            Official Site
+            <FaArrowRight size={12} />
+          </span>
         </a>
         <div className="artist-socials">
           <ul className="flex space-x-4">
