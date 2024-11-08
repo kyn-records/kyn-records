@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardTitle } from "@/components/ui/card";
+import { CardTitle } from "@/components/ui/card";
 
 import {
   FaArrowRight,
@@ -35,51 +35,53 @@ const iconMap: Record<string, React.ElementType> = {
 };
 const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
   return (
-    <Card className="rounded-xl shadow-lg transition-transform transform lg:hover:scale-105 border-none overflow-hidden saturate-[85%]">
+    <div className="group transition-transform transform lg:hover:scale-105 border-none overflow-hidden saturate-[85%] rounded-none shadow-none">
       <div
-        className="artist-image h-0 pt-[75%]"
+        className="artist-image h-0 pt-[75%] shadow-lg rounded-xl"
         style={{
           backgroundImage: `url(${artist.image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
-      <div className="absolute w-full p-[15px] bottom-0 bg-gradient-to-b from-transparent to-black/85 text-white">
+      <div className="w-full bottom-0 text-white mt-4 md:opacity-55 md:group-hover:opacity-85 transition-all">
         <CardTitle className="text-xl font-bold">{artist.name}</CardTitle>
-        <a
-          href={artist.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="artist-site mb-2 underline-animation"
-        >
-          <span className="flex flex-row gap-1 whitespace-nowrap items-center">
-            Official Site
-            <FaArrowRight size={12} />
-          </span>
-        </a>
-        <div className="artist-socials">
-          <ul className="flex space-x-4">
-            {artist.socialMedia.map((link, index) => {
-              const IconComponent = iconMap[link.platform];
-              return (
-                <li key={index}>
-                  <a
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={link.platform}
-                  >
-                    {IconComponent ? (
-                      <IconComponent className="w-5 h-5" />
-                    ) : null}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+        <div className="md:opacity-0 md:group-hover:opacity-100 transition-all">
+          <a
+            href={artist.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="artist-site mb-2 underline-animation"
+          >
+            <span className="flex flex-row gap-1 whitespace-nowrap items-center">
+              Official Site
+              <FaArrowRight size={12} />
+            </span>
+          </a>
+          <div className="artist-socials">
+            <ul className="flex space-x-4">
+              {artist.socialMedia.map((link, index) => {
+                const IconComponent = iconMap[link.platform];
+                return (
+                  <li key={index}>
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={link.platform}
+                    >
+                      {IconComponent ? (
+                        <IconComponent className="w-5 h-5" />
+                      ) : null}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 
