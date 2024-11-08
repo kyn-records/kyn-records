@@ -1,7 +1,6 @@
 import { Html } from "@react-three/drei";
 import { Button } from "./button";
 import { FaShoppingBag, FaYoutube } from "react-icons/fa";
-import { BsMusicPlayerFill } from "react-icons/bs";
 import { Vector3 } from "@react-three/fiber";
 import { ReactNode } from "react";
 import { FaRegNewspaper } from "react-icons/fa6";
