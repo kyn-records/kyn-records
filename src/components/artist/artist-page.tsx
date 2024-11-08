@@ -24,7 +24,7 @@ const artists = [
   {
     name: "Big Sean",
     image:
-      "https://www.defjam.com/files/2020/07/Screen-Shot-2021-03-10-at-10.59.53-AM.png",
+      "https://www.defjam.com/files/2020/07/230926_070-SHAKE_PR_BLACK-BACKDROP_084-copy-1-compressed-scaled-e1730924625945-950x1024.jpg",
     website: "https://uknowbigsean.com/",
     socialMedia: [
       { platform: "Instagram", url: "https://www.instagram.com/bigsean/" },
@@ -43,7 +43,7 @@ const artists = [
   {
     name: "Big Sean",
     image:
-      "https://www.defjam.com/files/2020/07/Screen-Shot-2021-03-10-at-10.59.53-AM.png",
+      "https://www.defjam.com/files/2020/07/Screen-Shot-2021-03-10-at-10.57.32-AM.png",
     website: "https://uknowbigsean.com/",
     socialMedia: [
       { platform: "Instagram", url: "https://www.instagram.com/bigsean/" },
@@ -62,7 +62,7 @@ const artists = [
   {
     name: "Big Sean",
     image:
-      "https://www.defjam.com/files/2020/07/Screen-Shot-2021-03-10-at-10.59.53-AM.png",
+      "https://www.defjam.com/files/2020/07/Alessia_Deadman-1-compressed-1024x1024.jpg",
     website: "https://uknowbigsean.com/",
     socialMedia: [
       { platform: "Instagram", url: "https://www.instagram.com/bigsean/" },
@@ -81,7 +81,7 @@ const artists = [
   {
     name: "Big Sean",
     image:
-      "https://www.defjam.com/files/2020/07/Screen-Shot-2021-03-10-at-10.59.53-AM.png",
+      "https://www.defjam.com/files/2024/10/Breez-Kennedy_Press-Photo-compressed-scaled-e1730397592553-1024x1014.jpg",
     website: "https://uknowbigsean.com/",
     socialMedia: [
       { platform: "Instagram", url: "https://www.instagram.com/bigsean/" },
@@ -100,7 +100,7 @@ const artists = [
   {
     name: "Big Sean",
     image:
-      "https://www.defjam.com/files/2020/07/Screen-Shot-2021-03-10-at-10.59.53-AM.png",
+      "https://www.defjam.com/files/2022/10/Screenshot-2023-10-13-at-5.48.29-PM-e1697233837728-963x1024.png",
     website: "https://uknowbigsean.com/",
     socialMedia: [
       { platform: "Instagram", url: "https://www.instagram.com/bigsean/" },
@@ -119,7 +119,7 @@ const artists = [
   {
     name: "Big Sean",
     image:
-      "https://www.defjam.com/files/2020/07/Screen-Shot-2021-03-10-at-10.59.53-AM.png",
+      "https://www.defjam.com/files/2023/03/Unknown-1.-compressed-e1679590488462-1024x956.jpg",
     website: "https://uknowbigsean.com/",
     socialMedia: [
       { platform: "Instagram", url: "https://www.instagram.com/bigsean/" },
