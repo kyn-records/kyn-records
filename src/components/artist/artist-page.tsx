@@ -142,11 +142,11 @@ const ArtistPage = () => {
 
   return (
     <div
-      className={`page-artists h-full overflow-y-auto ${
+      className={`page-artists min-h-full h-max ${
         isDarkMode ? "bg-[#101010] text-white" : "bg-white text-black"
       }`}
     >
-      <div className="artist-container flex flex-wrap max-w-[1280px] mx-auto w-[95%] pt-5">
+      <div className="artist-container flex flex-wrap max-w-[1280px] mx-auto w-[95%] pb-10 pt-5">
         <div className="flex justify-between items-center w-full mb-6">
           <h1 className="text-3xl font-light">Artists</h1>
           {/* <DarkModeToggle /> */}
