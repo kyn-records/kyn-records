@@ -14,7 +14,9 @@ export const Header = () => {
           </div>
         </div>
       </Link>
-      <Button variant={"link"}>Artist</Button>
+      <Link href="/artist">
+        <Button variant={"link"}>Artist</Button>
+      </Link>
     </div>
   );
 };
