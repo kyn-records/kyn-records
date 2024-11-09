@@ -1,7 +1,9 @@
 import ArtistCard from "./artist-card";
 import { useTheme } from "../../ThemeContext";
+import { useEffect, useState } from "react";
+import { fetchArtists } from "@/service/artist.service";
 
-const artists = [
+const artistsDummy = [
   {
     name: "Big Sean",
     image:
@@ -137,8 +139,20 @@ const artists = [
   },
 ];
 
+
 const ArtistPage = () => {
+  const [artists, setArtists] = useState([]);
   const { isDarkMode } = useTheme();
+
+  useEffect(() => {
+    const loadData = async () => {
+        const data = await fetchArtists(); 
+        setArtists(data);  
+      console.log(data.length)
+    };
+
+    loadData()
+  },[])
 
   return (
     <div

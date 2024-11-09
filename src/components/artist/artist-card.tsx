@@ -16,6 +16,7 @@ interface SocialMediaLink {
 }
 
 interface Artist {
+   _id: string;
   name: string;
   image: string;
   website: string;
